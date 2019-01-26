@@ -34,6 +34,7 @@ class App extends React.Component {
 	};
 
 	render() {
+		console.log('APP', this.state)
 		return (
 			<View activePanel={this.state.activePanel}>
 				<Home id="home" fetchedUser={this.state.fetchedUser} go={this.go} />
